@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initialize the EditText to display results
         showResult = findViewById(R.id.showResult)
 
         // Initialize all buttons and set their click listeners
@@ -65,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 
     // Basic evaluation function
     private fun eval(expression: String): Double {
-        return object : Any() {
+        return object :   Any() {
             var pos = -1
             var ch = 0
 
